@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>개인정보처리방침 - 살림 자동가계부</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif; max-width: 720px; margin: 0 auto; padding: 32px 20px 80px; line-height: 1.7; color: #222; background: #fff; }
+  h1 { font-size: 24px; margin-bottom: 4px; }
+  .date { color: #888; font-size: 13px; margin-bottom: 24px; }
+  .notice { background: #FFF4E5; border: 1px solid #FFD8A8; border-radius: 8px; padding: 14px 16px; font-size: 13px; color: #7A4A00; margin-bottom: 28px; }
+  h2 { font-size: 18px; margin-top: 36px; margin-bottom: 10px; border-bottom: 2px solid #3457D5; display: inline-block; padding-bottom: 4px; }
+  table { width: 100%; border-collapse: collapse; margin: 12px 0 20px; font-size: 14px; }
+  th, td { border: 1px solid #e0e0e0; padding: 8px 10px; text-align: left; }
+  th { background: #f5f6fa; }
+  ul { padding-left: 20px; }
+  .footer-note { margin-top: 48px; padding-top: 20px; border-top: 1px solid #eee; font-size: 13px; color: #888; }
+</style>
+</head>
+<body>
+
+<h1>개인정보처리방침</h1>
+<div class="date">시행일자: 2026년 O월 O일</div>
+
+<div class="notice">
+⚠️ 본 문서는 초안입니다. 실제 서비스 정보(사업자명, 연락처 등)로 교체 후 게시해주세요.
+</div>
+
+<p>살림 자동가계부(이하 "회사" 또는 "앱")는 이용자의 개인정보를 중요시하며, 「개인정보보호법」 등 관련 법령을 준수합니다. 본 방침은 앱이 어떤 정보를 수집·이용·보관하는지 안내합니다.</p>
+
+<h2>1. 수집하는 개인정보 항목</h2>
+<table>
+<tr><th>구분</th><th>수집 항목</th><th>수집 방법</th></tr>
+<tr><td>회원가입/로그인</td><td>이메일 주소, (소셜로그인 시) 프로필 정보</td><td>회원가입, 소셜로그인 연동</td></tr>
+<tr><td>서비스 이용</td><td>구매 내역(품목명, 가맹점명, 금액, 날짜)</td><td>사용자 직접 입력, 영수증 촬영, 음성입력</td></tr>
+<tr><td>기기 접근 권한</td><td>카메라(영수증 촬영), 마이크(음성입력)</td><td>이용자 동의 시에만 접근</td></tr>
+<tr><td>자동 수집 정보</td><td>기기 정보, 접속 로그</td><td>서비스 이용 과정에서 자동 생성</td></tr>
+</table>
+
+<h2>2. 개인정보의 수집 및 이용 목적</h2>
+<ul>
+<li>회원 식별 및 로그인 서비스 제공</li>
+<li>가계부 자동 기록 및 소모품 소진 예측 서비스 제공</li>
+<li>영수증 촬영(OCR) 및 음성입력을 통한 자동 입력 기능 제공</li>
+<li>서비스 개선 및 오류 분석</li>
+</ul>
+
+<h2>3. 카메라 및 마이크 접근에 관한 안내</h2>
+<p>본 앱은 다음 목적으로만 카메라와 마이크에 접근하며, 이용자가 해당 기능을 직접 실행할 때만 접근합니다. 백그라운드에서 임의로 접근하지 않습니다.</p>
+<ul>
+<li><b>카메라</b>: 영수증 촬영 후 텍스트 인식(OCR)을 통해 구매 정보를 자동 추출하기 위함</li>
+<li><b>마이크</b>: 음성으로 구매 정보를 빠르게 입력하기 위함</li>
+</ul>
+<p>촬영된 영수증 이미지와 녹음된 음성 데이터는 텍스트 인식 처리 후 서버에 저장되지 않고 즉시 폐기됩니다.</p>
+
+<h2>4. 개인정보의 제3자 제공 및 처리위탁</h2>
+<p>회사는 원칙적으로 이용자의 개인정보를 외부에 제공하지 않습니다. 다만 서비스 제공을 위해 아래와 같이 외부 업체에 처리를 위탁하고 있습니다.</p>
+<table>
+<tr><th>수탁업체</th><th>위탁 업무</th><th>보유 및 이용기간</th></tr>
+<tr><td>Google Cloud (Vision API)</td><td>영수증 이미지 텍스트 인식</td><td>인식 처리 완료 즉시 파기</td></tr>
+<tr><td>Supabase</td><td>회원 인증 및 로그인 정보 관리</td><td>회원 탈퇴 시까지</td></tr>
+<tr><td>쿠팡(파트너스)</td><td>상품 구매 연결(딥링크 이동)</td><td>해당 없음 (개인정보 전송 없음, 링크 연결만)</td></tr>
+</table>
+
+<h2>5. 개인정보의 보유 및 이용 기간</h2>
+<ul>
+<li>회원 정보: 회원 탈퇴 시까지 (탈퇴 즉시 파기, 단 관련 법령에 따라 보존이 필요한 경우 예외)</li>
+<li>구매 내역 데이터: 이용자가 직접 삭제하거나 회원 탈퇴 시까지</li>
+</ul>
+
+<h2>6. 이용자의 권리와 행사 방법</h2>
+<p>이용자는 언제든지 개인정보 열람·정정·삭제, 회원 탈퇴, 수집·이용 동의 철회를 요청할 수 있습니다.</p>
+<p>문의: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+
+<h2>7. 개인정보의 파기 절차 및 방법</h2>
+<p>수집 목적이 달성되거나 보유기간이 경과한 개인정보는 지체 없이 파기합니다. 전자적 파일은 복구 불가능한 방법으로 삭제합니다.</p>
+
+<h2>8. 아동의 개인정보 보호</h2>
+<p>본 앱은 만 14세 미만 아동을 주 대상으로 하지 않으며, 만 14세 미만 아동의 개인정보를 고의로 수집하지 않습니다.</p>
+
+<h2>9. 개인정보 보호책임자</h2>
+<table>
+<tr><th>구분</th><th>내용</th></tr>
+<tr><td>성명</td><td>[담당자 이름]</td></tr>
+<tr><td>연락처</td><td>[이메일 / 전화번호]</td></tr>
+</table>
+
+<h2>10. 고지의 의무</h2>
+<p>본 방침은 법령·정책 변경에 따라 개정될 수 있으며, 변경 시 앱 내 공지 또는 본 페이지를 통해 고지합니다.</p>
+
+<div class="footer-note">
+살림 자동가계부
+</div>
+
+</body>
+</html>
